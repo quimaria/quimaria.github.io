@@ -1,0 +1,41 @@
+/* Apply font and spacing fixes */
+body {
+    /*font-family: Arial, sans-serif;*/
+    font-family: 'Arial', sans-serif; /* Elegant serif font */
+}
+
+/* Make the header text look romantic */
+h1 {
+    font-family: 'Arima', serif; /* Beautiful cursive font */
+    font-size: 3rem;
+}
+
+/* Navbar & regular text */
+nav, p {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Adjust mobile menu */
+@media (max-width: 768px) {
+    #menu {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(220, 38, 38, 0.9); /* Red with transparency */
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    #menu a {
+        display: block;
+        padding: 10px;
+    }
+}
