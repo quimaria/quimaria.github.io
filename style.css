@@ -4,15 +4,26 @@ body {
     font-family: 'Arial', sans-serif; /* Elegant serif font */
 }
 
+/* Unique font for the navbar title */
+.nav-title {
+    /*font-family: "Bangers", system-ui;*/
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    font-style: normal;
+}
+
 /* Make the header text look romantic */
-h1 {
+.main-title {
     font-family: 'Arima', serif; /* Beautiful cursive font */
-    font-size: 3rem;
+    /*font-family: 'Raleway', sans-serif;*/
+    /*font-family: "Bangers", system-ui;*/
+    font-size: 5rem;
 }
 
 /* Navbar & regular text */
 nav, p {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Smooth scrolling for anchor links */
