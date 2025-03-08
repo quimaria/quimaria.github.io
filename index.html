@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARIA❤️QUIM</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Montserrat:wght@400;700&family=Arima:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="bg-red-700 text-white p-4 shadow-lg fixed top-0 w-full z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="nav-title">MARIA ❤️ QUIM</h1>
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+            <div id="menu" class="hidden md:flex space-x-6">
+                <a href="#horari" class="rounded-md px-3 py-2 font-semibold text-white hover:bg-red-50 hover:text-red-700">HORARI</a>
+                <a href="#lloc" class="rounded-md px-3 py-2 font-semibold text-white hover:bg-red-50 hover:text-red-700">LLOC</a>
+                <a href="#rsvp" class="rounded-md px-3 py-2 font-semibold text-white hover:bg-red-50 hover:text-red-700">RSVP</a>
+                <a href="#historia" class="rounded-md px-3 py-2 font-semibold text-white hover:bg-red-50 hover:text-red-700">HISTÒRIA</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="text-center pt-24 py-12 bg-red-100">
+        <h1 class="main-title font-bold text-red-700">ENS CASEM!</h1>
+        <p class="text-2xl mt-3 text-red-600">📅 Apunta't la data: <b>14 de Juny del 2025</b></p>
+        <p id="countdown" class="text-2xl mt-3 text-red-600">⏱️ Compte enrere pel gran dia: <span id="timer" class="text-2xl mt-3 text-red-600 font-bold"></span></p>
+        
+    </header>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
