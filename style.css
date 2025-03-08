@@ -1,7 +1,7 @@
 /* Apply font and spacing fixes */
 body {
-    /*font-family: Arial, sans-serif;*/
-    font-family: 'Arial', sans-serif; /* Elegant serif font */
+    /*font-family: 'Arial', sans-serif; /* Elegant serif font */
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Unique font for the navbar title */
