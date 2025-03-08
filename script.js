@@ -13,7 +13,7 @@ function countdown() {
     const timeLeft = weddingDate - now;
 
     const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-    document.getElementById("timer").innerText = `Falten ${days} dies!`;
+    document.getElementById("timer").innerText = `${days} dies!`;
 }
 
 // Update countdown every second
