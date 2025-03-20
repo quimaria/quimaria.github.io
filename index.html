@@ -8,6 +8,10 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Flowbite-->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +23,7 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="bg-red-700 text-white p-4 shadow-lg fixed top-0 w-full z-10">
+    <nav class="bg-red-700 text-white p-4 shadow-lg fixed top-0 w-full z-50">
         <div class="container mx-auto flex justify-between items-center">
             <h1 class="nav-title">MARIA ❤️ QUIM</h1>
             <button id="menu-btn" class="md:hidden focus:outline-none">
@@ -28,10 +32,10 @@
                 </svg>
             </button>
             <div id="menu" class="hidden md:flex space-x-6">
-                <a href="#horari" class="rounded-md px-3 py-2 font-semibold text-white hover:bg-red-50 hover:text-red-700">HORARI</a>
-                <a href="#lloc" class="rounded-md px-3 py-2 font-semibold text-white hover:bg-red-50 hover:text-red-700">LLOC</a>
-                <a href="#rsvp" class="rounded-md px-3 py-2 font-semibold text-white hover:bg-red-50 hover:text-red-700">RSVP</a>
-                <a href="#historia" class="rounded-md px-3 py-2 font-semibold text-white hover:bg-red-50 hover:text-red-700">HISTÒRIA</a>
+                <a href="#horari" onclick="event.preventDefault(); document.getElementById('horari').scrollIntoView({behavior: 'smooth'});" class="rounded-md px-3 py-2 font-semibold text-white hover:bg-red-50 hover:text-red-700">HORARI</a>
+                <a href="#lloc" onclick="event.preventDefault(); document.getElementById('lloc').scrollIntoView({behavior: 'smooth'});" class="rounded-md px-3 py-2 font-semibold text-white hover:bg-red-50 hover:text-red-700">LLOC</a>
+                <a href="#rsvp" onclick="event.preventDefault(); document.getElementById('rsvp').scrollIntoView({behavior: 'smooth'});" class="rounded-md px-3 py-2 font-semibold text-white hover:bg-red-50 hover:text-red-700">RSVP</a>
+                <a href="#historia" onclick="event.preventDefault(); document.getElementById('historia').scrollIntoView({behavior: 'smooth'});" class="rounded-md px-3 py-2 font-semibold text-white hover:bg-red-50 hover:text-red-700">HISTÒRIA</a>
             </div>
         </div>
     </nav>
@@ -43,6 +47,72 @@
         <p id="countdown" class="text-2xl mt-3 text-red-600">⏱️ Compte enrere pel gran dia: <span id="timer" class="text-2xl mt-3 text-red-600 font-bold"></span></p>
         
     </header>
+
+    <main class="pt-16">
+
+        <!-- Carousel Section -->
+        <div id="default-carousel" class="relative w-full max-w-3xl mx-auto border-4 border-red-700 rounded-lg overflow-hidden shadow-lg aspect-[4/3]" data-carousel="static">
+            <div class="relative h-full">
+                <!-- Carousel items -->
+                <div class="hidden duration-700 ease-in-out h-full" data-carousel-item>
+                    <img src="/img/panama.jpeg" class="absolute object-cover object-center w-full h-full" alt="...">
+                </div>
+                <div class="hidden duration-700 ease-in-out h-full" data-carousel-item>
+                    <img src="/img/acadia.jpg" class="absolute object-cover object-center w-full h-full" alt="...">
+                </div>
+            </div>
+            <!-- Slider controls -->
+            <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+
+        <!-- Schedule Section -->
+        <section id="horari" class="py-12 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-red-700 mb-8">HORARI</h2>
+                <!-- Add your schedule content here -->
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section id="lloc" class="py-12 bg-red-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-red-700 mb-8">LLOC</h2>
+                <!-- Add your location content here -->
+            </div>
+        </section>
+
+        <!-- RSVP Section -->
+        <section id="rsvp" class="py-12 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-red-700 mb-8">RSVP</h2>
+                <!-- Add your RSVP form or content here -->
+            </div>
+        </section>
+
+        <!-- Story Section -->
+        <section id="historia" class="py-12 bg-red-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-red-700 mb-8">HISTÒRIA</h2>
+                <!-- Add your story content here -->
+            </div>
+        </section>
+
+    </main>
 
     <!-- Custom JS -->
     <script src="script.js"></script>
