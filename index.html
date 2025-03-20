@@ -33,8 +33,7 @@
             </button>
             <div id="menu" class="hidden md:flex space-x-6">
                 <a href="#horari" onclick="event.preventDefault(); document.getElementById('horari').scrollIntoView({behavior: 'smooth'});" class="rounded-md px-3 py-2 font-semibold text-white hover:bg-red-50 hover:text-red-700">HORARI</a>
-                <a href="#lloc" onclick="event.preventDefault(); document.getElementById('lloc').scrollIntoView({behavior: 'smooth'});" class="rounded-md px-3 py-2 font-semibold text-white hover:bg-red-50 hover:text-red-700">LLOC</a>
-                <a href="#rsvp" onclick="event.preventDefault(); document.getElementById('rsvp').scrollIntoView({behavior: 'smooth'});" class="rounded-md px-3 py-2 font-semibold text-white hover:bg-red-50 hover:text-red-700">RSVP</a>
+                <a href="#reserva" onclick="event.preventDefault(); document.getElementById('reserva').scrollIntoView({behavior: 'smooth'});" class="rounded-md px-3 py-2 font-semibold text-white hover:bg-red-50 hover:text-red-700">RESERVA</a>
                 <a href="#historia" onclick="event.preventDefault(); document.getElementById('historia').scrollIntoView({behavior: 'smooth'});" class="rounded-md px-3 py-2 font-semibold text-white hover:bg-red-50 hover:text-red-700">HISTÒRIA</a>
             </div>
         </div>
@@ -51,7 +50,7 @@
     <main class="pt-16">
 
         <!-- Carousel Section -->
-        <div id="default-carousel" class="relative w-full max-w-3xl mx-auto border-4 border-red-700 rounded-lg overflow-hidden shadow-lg aspect-[4/3]" data-carousel="static">
+        <div id="default-carousel" class="relative w-full max-w-3xl mx-auto border-4 border-red-700 rounded-lg overflow-hidden shadow-lg aspect-[4/3] mb-20" data-carousel="static">
             <div class="relative h-full">
                 <!-- Carousel items -->
                 <div class="hidden duration-700 ease-in-out h-full" data-carousel-item>
@@ -81,25 +80,28 @@
         </div>
 
         <!-- Schedule Section -->
-        <section id="horari" class="py-12 bg-white">
+        <section id="horari" class="py-12 bg-red-50">
             <div class="container mx-auto px-4">
                 <h2 class="text-3xl font-bold text-center text-red-700 mb-8">HORARI</h2>
-                <!-- Add your schedule content here -->
+                <center>
+                    <p class="text-2xl mt-3 text-red-600">💍 <b>17h a 17:30h &mdash; Cerimònia</b> (<a href="https://maps.app.goo.gl/7KA7b9AkR1GQ66ds8" target="_blank" class="text-red-800 hover:text-red-500 underline font-bold transition duration-300">Ajuntament de Terrassa</a>)</b></p>
+                    <br>
+                    <div class="relative w-full max-w-3xl mx-auto border-4 border-red-700 rounded-lg overflow-hidden shadow-lg aspect-[4/3] mb-20">
+                        <img src="/img/ajuntament.jpg" class="absolute object-cover object-center w-full h-full" alt="Sala de Sessions, Ajuntament de Terrassa">
+                    </div>
+                    <p class="text-2xl mt-3 text-red-600">🎉 <b>19h a 2h &mdash; Celebració</b> (<a href="https://maps.app.goo.gl/wdgqXpcgnbM8m4Ca9" target="_blank" class="text-red-800 hover:text-red-500 underline font-bold transition duration-300">Mas Ventós</a>)</b></p>
+                    <br>
+                    <div class="relative w-full max-w-3xl mx-auto border-4 border-red-700 rounded-lg overflow-hidden shadow-lg aspect-[4/3]">
+                        <img src="/img/masventos.jpeg" class="absolute object-cover object-center w-full h-full" alt="Mas Ventós">
+                    </div>
+                </center>
             </div>
         </section>
 
-        <!-- Location Section -->
-        <section id="lloc" class="py-12 bg-red-50">
+        <!-- Reserva Section -->
+        <section id="reserva" class="py-12 bg-white">
             <div class="container mx-auto px-4">
-                <h2 class="text-3xl font-bold text-center text-red-700 mb-8">LLOC</h2>
-                <!-- Add your location content here -->
-            </div>
-        </section>
-
-        <!-- RSVP Section -->
-        <section id="rsvp" class="py-12 bg-white">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl font-bold text-center text-red-700 mb-8">RSVP</h2>
+                <h2 class="text-3xl font-bold text-center text-red-700 mb-8">RESERVA</h2>
                 <!-- Add your RSVP form or content here -->
             </div>
         </section>
